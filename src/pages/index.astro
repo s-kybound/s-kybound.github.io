@@ -1,6 +1,11 @@
 ---
 // Component Imports
-import wip from "../../public/wip-bot.svg";
+import wip from "../../wip-bot.svg";
+import dots from "../../background-ky-coloured.svg";
+import sketches from "../../sketches.svg";
+import Navbar from "../components/Navbar";
+import "../styles/parallax.css";
+import "../styles/default.css";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -12,31 +17,26 @@ import wip from "../../public/wip-bot.svg";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <style>
-      html,
-      body {
-        font-family: system-ui;
-        margin: 0;
-      }
-      body {
-        padding: 2rem;
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <header>
-        <h1>work in progress!</h1>
+    <Navbar />
+    <div class="parallax-wrapper">
+      <header class="parallax-header">
+        <img src={dots} class="background" />
+        <img src={sketches} class="foreground" />
         <img src={wip} />
+      </header>
+      <section style="text-align: center; font-size: 50px;">
+        <h1>work in progress!</h1>
         <p>
           good news! whatever link you clicked will exist!... unfortunately, not
           yet.
         </p>
         <p>
           here, a link back {"---> "}
-          <a href="/home">Home</a>
+          <a href="/">home</a>
         </p>
-      </header>
-    </main>
+      </section>
+    </div>
   </body>
 </html>
