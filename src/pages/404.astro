@@ -1,6 +1,11 @@
 ---
 // Component Imports
 import lost from "../../public/confused-bot.svg";
+import dots from "../../background-ky-coloured.svg";
+import sketches from "../../sketches.svg";
+import Navbar from "../components/Navbar";
+import "../styles/parallax.css";
+import "../styles/default.css";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -12,28 +17,23 @@ import lost from "../../public/confused-bot.svg";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <style>
-      html,
-      body {
-        font-family: system-ui;
-        margin: 0;
-      }
-      body {
-        padding: 2rem;
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <header>
+    <Navbar />
+    <div class="parallax-wrapper">
+      <header class="parallax-header">
+        <img src={dots} class="background" />
+        <img src={sketches} class="foreground" />
+        <img src={lost} style="height: 75%;" />
+      </header>
+      <section style="text-align: center; font-size: 50px;">
         <h1>how did you get here?</h1>
-        <img src={lost} />
         <p>you seem to be lost...</p>
         <p>
           here, a link back {"---> "}
-          <a href="/">Home</a>
+          <a href="/">home</a>
         </p>
-      </header>
-    </main>
+      </section>
+    </div>
   </body>
 </html>
