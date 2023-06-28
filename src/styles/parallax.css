@@ -42,8 +42,9 @@ body {
 }
 
 section {
+    text-align: center;
     margin: auto;
-    font-size: 50px;
+    font-size: 150%;
     width: 60%;
     background: #333333;
     border-radius: 15px;
