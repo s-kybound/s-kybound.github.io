@@ -6,7 +6,9 @@ export default function Navbar() {
       <header className="navbar-header">
         <ul className="left-items">
           <li>
-            <a href="/" className="logo">/home/skybound</a>
+            <a href="/" className="logo">
+              /home/skybound
+            </a>
           </li>
           <li>
             <a href="/education">education</a>
@@ -30,7 +32,9 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="mobile">
-          <a href="/" className="logo">/home/skybound</a>
+          <a href="/" className="logo">
+            /home/skybound
+          </a>
           <p>placeholder for button</p>
         </div>
       </header>
