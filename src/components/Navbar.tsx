@@ -1,3 +1,4 @@
+import resume from "../../Kyriel_Abad_Resume_032022.pdf";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
         </ul>
         <ul className="right-items">
           <li>
-            <a href="/files">files</a>
+            <a href={resume}>resume</a>
           </li>
         </ul>
         <div className="mobile">
