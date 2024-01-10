@@ -1,23 +1,15 @@
-.navbar-header,
-.navbar-header-dark {
+.navbar-header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.6s;
-    padding: auto;
-    z-index: 1;
-}
-
-.navbar-header {
     background: #ffffff;
-}
-
-.navbar-header-dark {
-    background: none;
+    transition: 0.6s;
+    min-height: 52px;
 }
 
 .navbar-header .logo {
@@ -26,7 +18,7 @@
     color: #000000;
     text-decoration: none;
     letter-spacing: 2px;
-    margin: 0 15px;
+    margin: 0 0 px;
     transition: 0.6s;
 }
 
@@ -50,4 +42,31 @@
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
+}
+
+.left-items,
+.right-items {
+    padding: 0%;
+}
+
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-header ul {
+        display: none;
+    }
+
+    .mobile {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #000000;
+    }
 }

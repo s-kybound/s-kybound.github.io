@@ -4,12 +4,9 @@ export default function Navbar() {
   return (
     <>
       <header className="navbar-header">
-        <a href="/" className="logo">
-          /home/skybound
-        </a>
-        <ul>
+        <ul className="left-items">
           <li>
-            <a href="/">home</a>
+            <a href="/" className="logo">/home/skybound</a>
           </li>
           <li>
             <a href="/education">education</a>
@@ -27,6 +24,15 @@ export default function Navbar() {
             <a href="/files">files</a>
           </li>
         </ul>
+        <ul className="right-items">
+          <li>
+            <a href="/files">files</a>
+          </li>
+        </ul>
+        <div className="mobile">
+          <a href="/" className="logo">/home/skybound</a>
+          <p>placeholder for button</p>
+        </div>
       </header>
     </>
   );
