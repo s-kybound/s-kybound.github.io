@@ -1,10 +1,7 @@
 ---
 // Component Imports
-import wip from "../../public/wip-bot.svg";
 import dots from "../../public/background-ky-coloured.svg";
-import sketches from "../../public/sketches.svg";
 import Navbar from "../components/Navbar";
-import "../styles/parallax.css";
 import "../styles/default.css";
 
 // Full Astro Component Syntax:
@@ -14,29 +11,25 @@ import "../styles/default.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <title>~/</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <Navbar />
-    <div class="parallax-wrapper">
-      <header class="parallax-header">
-        <img src={dots} class="background" />
-        <img src={sketches} class="foreground" />
-        <img src={wip} />
-      </header>
-      <section>
-        <h1>work in progress!</h1>
-        <p>
-          good news! whatever link you clicked will exist!... unfortunately, not
-          yet.
-        </p>
-        <p>
-          here, a link back {"---> "}
-          <a href="/">home</a>
-        </p>
-      </section>
-    </div>
+    <img src={dots} class="background" />
+    <section>
+      <h1>Hi!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </section>
   </body>
 </html>

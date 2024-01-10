@@ -4,7 +4,6 @@ import lost from "../../public/confused-bot.svg";
 import dots from "../../public/background-ky-coloured.svg";
 import sketches from "../../public/sketches.svg";
 import Navbar from "../components/Navbar";
-import "../styles/parallax.css";
 import "../styles/default.css";
 
 // Full Astro Component Syntax:
@@ -14,26 +13,20 @@ import "../styles/default.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <title>page does not exist!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <Navbar />
-    <div class="parallax-wrapper">
-      <header class="parallax-header">
-        <img src={dots} class="background" />
-        <img src={sketches} class="foreground" />
-        <img src={lost} style="height: 75%;" />
-      </header>
-      <section>
-        <h1>how did you get here?</h1>
-        <p>you seem to be lost...</p>
-        <p>
-          here, a link back {"---> "}
-          <a href="/">home</a>
-        </p>
-      </section>
-    </div>
+    <img src={dots} class="background" />
+    <section>
+      <h1>this page does not exist!</h1>
+      <p>
+        here, a link back {"---> "}
+        <a href="/">home</a>
+      </p>
+    </section>
   </body>
 </html>
