@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: beige;
+    background: #fff;
     transition: 0.6s;
     min-height: 52px;
 }
