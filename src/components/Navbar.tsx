@@ -1,4 +1,4 @@
-import resume from "../../Kyriel_Abad_Resume_032022.pdf";
+import resume from "../../public/Kyriel_Abad_Resume_032022.pdf";
 import "./Navbar.css";
 
 export default function Navbar() {

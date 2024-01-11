@@ -1,4 +1,4 @@
-import kyriel from "../../Kyriel_Linkedin.png";
+import kyriel from "../../public/Kyriel_Linkedin.png";
 import "./ProfilePicture.css";
 
 export default function ProfilePicture() {
