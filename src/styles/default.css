@@ -6,6 +6,10 @@ body {
     padding-inline: 25px;
 }
 
+.content {
+    text-align: center;
+}
+
 .background {
     position: fixed;
     top: 0%;
