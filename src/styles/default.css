@@ -6,6 +6,24 @@ body {
     padding-inline: 25px;
 }
 
+a:link {
+    color:aquamarine;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color:mediumaquamarine;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
 .content {
     text-align: center;
 }
