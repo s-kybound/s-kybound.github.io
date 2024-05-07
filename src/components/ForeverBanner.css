@@ -1,0 +1,34 @@
+#container {
+    width: 100%;
+    height: 7rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background: transparent;
+    color: #fff;
+}
+#container .scroll {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: loop 20s linear infinite;
+}
+
+@keyframes loop {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: #e2e8f0;
+    font-size: 5rem;
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: 0.4rem;
+    white-space: nowrap;
+}

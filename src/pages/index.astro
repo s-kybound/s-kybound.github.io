@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import dots from "../../public/background-ky-coloured.svg";
+import ForeverBanner from "../components/ForeverBanner.astro";
 import Navbar from "../components/Navbar";
 import ProfilePicture from "../components/ProfilePicture";
 import "../styles/default.css";
@@ -21,8 +22,9 @@ import "../styles/default.css";
     <Navbar client:load />
     <img src={dots} class="background" />
     <section class="content">
-      <h1>Hi!</h1>
       <ProfilePicture />
+      <h1>My name is Kyriel.</h1>
+      <ForeverBanner />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

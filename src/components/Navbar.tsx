@@ -44,10 +44,10 @@ export default function Navbar() {
         <div className="mobile">
           <div className="centered-container">
             <a href="/" className="logo">
-              /home/skybound
+              skybound
             </a>
             <div className="nav-toggle" id="nav-toggle" onClick={toggleMenu}>
-              <IoMenu />
+              {menuOpen ? <IoClose /> : <IoMenu />}
             </div>
             <div className={menuOpen ? "shownMenu" : "hiddenMenu"} id="menu">
               <ul className="down-items">
