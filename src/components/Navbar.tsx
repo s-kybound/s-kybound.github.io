@@ -24,6 +24,9 @@ export default function Navbar() {
             <a href="/education">education</a>
           </li>
           <li>
+            <a href="/experience">experience</a>
+          </li>
+          <li>
             <a href="/projects">projects</a>
           </li>
           <li>
@@ -55,6 +58,9 @@ export default function Navbar() {
                   <a href="/education">education</a>
                 </li>
                 <li>
+                  <a href="/experience">experience</a>
+                </li>
+                <li>
                   <a href="/projects">projects</a>
                 </li>
                 <li>
@@ -65,6 +71,9 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a href="/files">files</a>
+                </li>
+                <li>
+                  <a href={resume}>resume</a>
                 </li>
               </ul>
             </div>

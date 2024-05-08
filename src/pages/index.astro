@@ -21,19 +21,61 @@ import "../styles/default.css";
   <body>
     <Navbar client:load />
     <img src={dots} class="background" />
+    <ProfilePicture />
+    <p class="content-header">- My name is Kyriel. -</p>
+    <ForeverBanner />
     <section class="content">
-      <ProfilePicture />
-      <h1>My name is Kyriel.</h1>
-      <ForeverBanner />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+      <p class="content-header">- About me -</p>
+      <div class="content-text">
+        Hi! I'm Kyriel, a penultimate computer science undergraduate at NUS. I
+        love learning new things and applying these things to build cool stuff.
+        I take inspiriation from the world; from the things and people I meet.
+        I'm interested in many things, but I'm particularly passionate about
+        programming languages, memory management, systems programming, and (in
+        the future) artificial general intelligence. I also have a passion for
+        teaching and sharing knowledge, and I'm always happy to help others
+        learn.
+        <br />
+        <br />
+        Beyond academics, I enjoy making good meals, making digital art, playing
+        the trombone, and on occasion, exploring the world. I love tinkering - you
+        will often see me upgrading my split keyboard, or 3D printing something.
+        <br />
+        <br />
+        I'm always looking for new opportunities to learn and grow, so if you have
+        something interesting to share, or something to collaborate on, feel free
+        to reach out!
+      </div>
+      <p class="content-header">- Skills -</p>
+      <div class="content-text">
+        I'm proficient in Rust, TypeScript, Scheme and C, and I'm familiar with
+        C++, Go and Python. I have some experience in formal verification with
+        the Coq proof assistant as well.
+        <br />
+        <br />
+        Currently exploring the functional programming paradigm with Haskell, and
+        low-level programming with WebAssembly!
+      </div>
+      <p class="content-header">- Projects -</p>
+      <div class="content-text">
+        I've worked on a variety of cool projects! Here are some of them:
+        <br />
+        <br />
+        <a href="https://github.com/s-kybound/scm-slang" class="content-text">
+          scm-slang: An R7RS Scheme implementation implemented as a
+          Scheme-to-JavaScript transpiler
+        </a>
+        <br />
+        <a href="https://github.com/s-kybound/go-slang" class="content-text">
+          go-slang: An implementation of Go in JavaScript using a virtual
+          machine
+        </a>
+        <br />
+        <a href="https://github.com/s-kybound/klang" class="content-text">
+          kylang: (WIP!) A self-specified programming language to demonstrate
+          programming language concepts, using a verified bytecode compiler
+        </a>
+      </div>
     </section>
   </body>
 </html>

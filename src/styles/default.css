@@ -4,6 +4,7 @@ body {
     color: #fff;
     padding-top: 75px;
     padding-inline: 25px;
+    text-align: center;
 }
 
 a:link {
@@ -25,7 +26,13 @@ a:hover {
 }
 
 .content {
+    position: relative;
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .background {
@@ -36,4 +43,16 @@ a:hover {
     width: 160%;
     object-fit: cover;
     z-index: -1;
+}
+
+.content-header {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.content-text {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: justify;
+    text-justify: inter-word;
 }
