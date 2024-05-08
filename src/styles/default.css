@@ -1,6 +1,6 @@
 body {
     background-color: #100020;
-    font-family: system-ui;
+    font-family: "Share Tech Mono", monospace;
     color: #fff;
     padding-top: 75px;
     padding-inline: 25px;
@@ -28,7 +28,8 @@ a:hover {
 .content {
     position: relative;
     display: flex;
-    width: 80vw;
+    min-width: 300px;
+    width: 60vw;
     flex-direction: column;
     text-align: center;
     margin-left: auto;
@@ -46,12 +47,12 @@ a:hover {
 }
 
 .content-header {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .content-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     text-align: justify;
     text-justify: inter-word;

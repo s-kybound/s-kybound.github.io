@@ -17,6 +17,12 @@ import "../styles/default.css";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <Navbar client:load />
@@ -66,10 +72,12 @@ import "../styles/default.css";
           Scheme-to-JavaScript transpiler
         </a>
         <br />
+        <br />
         <a href="https://github.com/s-kybound/go-slang" class="content-text">
           go-slang: An implementation of Go in JavaScript using a virtual
           machine
         </a>
+        <br />
         <br />
         <a href="https://github.com/s-kybound/klang" class="content-text">
           kylang: (WIP!) A self-specified programming language to demonstrate
