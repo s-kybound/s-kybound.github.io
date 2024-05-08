@@ -1,8 +1,8 @@
 ---
 // Component Imports
 import dots from "../../public/background-ky-coloured.svg";
-import Lost from "../components/Lost.astro";
 import Navbar from "../components/Navbar";
+import WIP from "../components/WIP.astro";
 import "../styles/default.css";
 
 // Full Astro Component Syntax:
@@ -12,7 +12,7 @@ import "../styles/default.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>page does not exist!</title>
+    <title>~/projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,6 +26,14 @@ import "../styles/default.css";
   <body>
     <Navbar client:load />
     <img src={dots} class="background" />
-    <Lost />
+    <WIP />
+    <section class="content">
+      <p class="content-header">- projects -</p>
+      <div class="content-text">
+        have a showcase of my stuff here - short and sweet! possibly, also link
+        to a more detailed page! it'd be cool to somehow add demos for the
+        projects here! maybe with the ace editor? for (ky/gos/scms)lang?
+      </div>
+    </section>
   </body>
 </html>
