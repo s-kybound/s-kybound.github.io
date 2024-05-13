@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../public/Kyriel_Abad_Resume_012024_4.pdf";
+import resume from "../../public/Kyriel_Abad_Resume_051324.pdf";
 import "./Navbar.css";
 import { IoClose, IoMenu } from "react-icons/io5";
 
