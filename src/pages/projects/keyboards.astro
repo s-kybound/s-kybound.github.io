@@ -1,0 +1,125 @@
+---
+// Component Imports
+import dots from "../../../public/background-ky-coloured.svg";
+import Navbar from "../../components/Navbar";
+import WIP from "../../components/WIP.astro";
+import "../../styles/default.css";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>~/projects/keyboards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Navbar client:load />
+    <img src={dots} class="background" />
+    <WIP />
+    <section class="content">
+      <p class="content-header">- keyboards -</p>
+      <div class="content-text">
+        my journey into the world of mechanical keyboards began in 2023, when in
+        dorm i saw a senior building their own keyboard, with the creamiest
+        switches i had ever felt. it was then that i knew i had to get my hands
+        on one of these - but there was an issue. i typed with 2 fingers and had
+        20wpm! instead, i decided to jump the gun and build a split keyboard.
+        <br />
+        <br />
+        why split?
+        <br />
+        <br />
+        1. ergonomics - split keyboards allow for a more natural typing position,
+        reducing strain on the wrists
+        <br />
+        2. customizability - split keyboards can be customized to fit your needs,
+        with different layouts and keymaps, and since you can move the two halves
+        around, you can adjust them to fit your body
+        <br />
+        3. portability - each half of a split keyboard is smaller than a full keyboard,
+        so you can easily take them with you
+        <br />
+        4. they look cool - i wanted to type like lelouch vi britannia
+        <br />
+        <img
+          src="https://qph.cf2.quoracdn.net/main-qimg-3b93af23841e284fc363d9cbb34c08fa"
+          class="content-image"
+        />
+        <br />
+        since then, i've built 4 different keyboards, which you may see below. some
+        were given away to friends, and others are still in use.
+      </div>
+      <p class="content-header">- project redox -</p>
+      <div class="content-text">
+        my first split keyboard! the redox is a smaller variant of the ergodox,
+        with 70 keys instead of 76. it features a smaller thumb cluster, which
+        is perfect for my small hands!
+        <br />
+        <br />
+        the redox uses a custom-designed psuedo-gasket mounted case, which was a
+        pain to assemble, but the end result was worth it. for the switches, i used
+        a frankenswitch of OUTEMU SILENT CREAM YELLOW housings with OUTEMU RED PANDA
+        stems, which gave me a nice, creamy "clack" sound. I've since fallen into
+        the dark side and main KAILH BOX JADES.
+        <br />
+        <br />
+        the redox was a wonderful daily driver that i used as a learning point to
+        solder, and a testbed for different layouts! i have since moved on to other
+        projects, but the redox will always be proudly displayed in my house.
+      </div>
+      <p class="content-header">- project corne -</p>
+      <div class="content-text">
+        the redox was cool, but
+        <br />
+        <br />
+        1. it was still too bulky to carry around - too tall to use comfortably on
+        a table without armrests, and too wide to fit well in my bag
+        <br />
+        2. it used wires, which were a pain to set up every single time i went to
+        a new place (which was often, since i was in college)
+        <br />
+        3. it sounded BEAUTIFUL, but using it in a public space would get me lynched
+        <br />
+        <br />
+        as such, i sought something silent and small that i could use as a portable
+        driver.. enter the corne! this guy is amazing - i could fit it in my pockets,
+        and with the HAIMU HEARTBEAT switches i used, no one could hear me using
+        the keyboard in class! most importantly, it's fully bluetooth based, so away
+        with the wires!
+        <br />
+        <br />
+        considering that the keyboard was meant to be silent, i could skimp on the
+        mount method - the corne is a tray mount design
+      </div>
+      <p class="content-header">- project lily -</p>
+      <div class="content-text">
+        a farewell project to a dear friend, who i will only see again in the
+        tail end of 2025. :')
+        <br />
+        <br />
+        this guy always poked fun at my typing speed, and my newfound obsession with
+        keyboards, but he also got interested in this world, so i built him one!
+      </div>
+      <p class="content-header">- project ORCA -</p>
+      <div class="content-text">
+        each of my prior projects lacked a final component - i still needed to
+        move my hand away to use the mouse. with an integrated trackball in the
+        keyboard, my hand never needs to leave the keyboard!
+        <br />
+        <br />
+        enter the ORCA, a killer whale split keyboard.
+      </div>
+    </section>
+  </body>
+</html>
