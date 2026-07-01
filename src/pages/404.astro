@@ -1,31 +1,11 @@
 ---
-// Component Imports
-import dots from "../../public/background-ky-coloured.svg";
+import Layout from "../layouts/Layout.astro";
 import Lost from "../components/Lost.astro";
-import Navbar from "../components/Navbar";
-import "../styles/default.css";
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>page does not exist!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <Navbar client:load />
-    <img src={dots} class="background" />
-    <Lost />
-  </body>
-</html>
+<Layout
+  title="404 · page not found"
+  description="This page does not exist. Head back home."
+>
+  <Lost />
+</Layout>

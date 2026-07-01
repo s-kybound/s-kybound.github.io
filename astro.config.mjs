@@ -1,9 +1,21 @@
-import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
+import { defineConfig, fontProviders } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	// Enable React to support React JSX components.
-	integrations: [react()],
-  	site: 'https://s-kybound.github.io',
+  site: 'https://s-kybound.github.io',
+  integrations: [sitemap()],
+  prefetch: true,
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: 'JetBrains Mono',
+      cssVariable: '--font-mono',
+      weights: [400, 700],
+      styles: ['normal'],
+      subsets: ['latin'],
+      display: 'swap',
+      fallbacks: ['ui-monospace', 'Cascadia Code', 'Menlo', 'Consolas', 'monospace'],
+    },
+  ],
 });

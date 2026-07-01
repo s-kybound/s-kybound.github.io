@@ -1,0 +1,83 @@
+---
+import "./Navbar.css";
+---
+
+<header class="navbar-header">
+  <nav class="desktop-nav" aria-label="Primary">
+    <ul class="left-items">
+      <li>
+        <a href="/" class="logo">/home/skybound</a>
+      </li>
+      <li>
+        <a href="/education">education</a>
+      </li>
+      <li>
+        <a href="/experience">experience</a>
+      </li>
+      <li>
+        <a href="/projects">projects</a>
+      </li>
+    </ul>
+    <ul class="right-items">
+      <li>
+        <a href="/Kyriel_Abad_Resume.pdf">resume</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="mobile">
+    <div class="centered-container">
+      <a href="/" class="logo">/home/skybound</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav-toggle-glyph" aria-hidden="true">&#8801;</span>
+      </button>
+      <nav id="menu" class="hiddenMenu" aria-label="Mobile">
+        <ul class="down-items">
+          <li>
+            <a href="/education">education</a>
+          </li>
+          <li>
+            <a href="/experience">experience</a>
+          </li>
+          <li>
+            <a href="/projects">projects</a>
+          </li>
+          <li>
+            <a href="/Kyriel_Abad_Resume.pdf">resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  (function () {
+    const toggle = document.getElementById("nav-toggle");
+    const menu = document.getElementById("menu");
+    const glyph = toggle && toggle.querySelector(".nav-toggle-glyph");
+    if (!toggle || !menu || !glyph) return;
+
+    const setOpen = (open) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      menu.classList.toggle("shownMenu", open);
+      menu.classList.toggle("hiddenMenu", !open);
+      glyph.textContent = open ? "✕" : "≡";
+    };
+
+    toggle.addEventListener("click", () => {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setOpen(false);
+    });
+  })();
+</script>

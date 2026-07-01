@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import kyriel from "../assets/Kyriel_Linkedin.png";
+import "./ProfilePicture.css";
+---
+
+<Image
+  class="profile-picture"
+  src={kyriel}
+  alt="Portrait of Kyriel Abad"
+  widths={[150, 280, 560]}
+  sizes="(max-width: 900px) 30vw, 280px"
+/>

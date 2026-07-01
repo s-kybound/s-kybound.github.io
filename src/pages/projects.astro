@@ -1,43 +1,19 @@
 ---
-// Component Imports
-import dots from "../../public/background-ky-coloured.svg";
-import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
 import WIP from "../components/WIP.astro";
-import "../styles/default.css";
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>~/projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <Navbar client:load />
-    <img src={dots} class="background" />
-    <WIP />
-    <section class="content">
-      <p class="content-header">- projects -</p>
-      <div class="content-text">
-        have a showcase of my stuff here - short and sweet! possibly, also link
-        to a more detailed page! it'd be cool to somehow add demos for the
-        projects here! maybe with the ace editor? for (ky/gos/scms)lang?
-        <br />
-        <br />
-        for now, leave the writeups below:
-      </div>
-      <a href="/projects/keyboards" class="content-link">keyboard adventure</a>
-    </section>
-  </body>
-</html>
+<Layout
+  title="~/projects · Kyriel Abad"
+  description="Kyriel Abad's projects — programming languages, systems experiments, and mechanical keyboards."
+>
+  <section class="content">
+    <h1>projects</h1>
+    <p>
+      A fuller showcase of my work is on the way. For now, follow me down the
+      rabbit hole of building keyboards:
+    </p>
+    <p><a href="/projects/keyboards">keyboard adventure —&gt;</a></p>
+  </section>
+  <WIP />
+</Layout>

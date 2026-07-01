@@ -2,10 +2,14 @@
 import "./ForeverBanner.css";
 ---
 
-<!--trick taken and modified from 
+<!--trick taken and modified from
     https://medium.com/@archielister/make-an-infinitely-scrolling-banner-with-html-and-css-e7918506c496
     i have reduced its complexity quite a bit-->
-<div id="container">
+<p class="sr-only">
+  Student, developer, designer, cook, creator, maker, researcher, thinker,
+  learner, professional yapper, experimenter, crusader.
+</p>
+<div id="container" aria-hidden="true">
   <div class="scroll" id="scroll-one">
     <div class="item">Student.</div>
     <div class="item">Developer.</div>

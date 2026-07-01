@@ -1,89 +1,67 @@
 ---
-// Component Imports
-import dots from "../../public/background-ky-coloured.svg";
+import Layout from "../layouts/Layout.astro";
 import ForeverBanner from "../components/ForeverBanner.astro";
-import Navbar from "../components/Navbar";
-import ProfilePicture from "../components/ProfilePicture";
-import "../styles/default.css";
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import ProfilePicture from "../components/ProfilePicture.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>~/</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <Navbar client:load />
-    <img src={dots} class="background" />
-    <ProfilePicture />
-    <p class="content-header">- My name is Kyriel. -</p>
-    <ForeverBanner />
-    <section class="content">
-      <p class="content-header">- About me -</p>
-      <div class="content-text">
-        Hi! I'm Kyriel, a penultimate computer science undergraduate at NUS. I
-        love learning new things and applying these things to build cool stuff.
-        I take inspiriation from the world; from the things and people I meet.
-        I'm interested in many things, but I'm particularly passionate about
-        programming languages, memory management, systems programming, and (in
-        the future) artificial general intelligence. I also have a passion for
-        teaching and sharing knowledge, and I'm always happy to help others
-        learn.
-        <br />
-        <br />
-        Beyond academics, I enjoy making good meals, making digital art, playing
-        the trombone, and on occasion, exploring the world. I love tinkering - you
-        will often see me upgrading my split keyboard, or 3D printing something.
-        <br />
-        <br />
-        I'm always looking for new opportunities to learn and grow, so if you have
-        something interesting to share, or something to collaborate on, feel free
-        to reach out!
-      </div>
-      <p class="content-header">- Skills -</p>
-      <div class="content-text">
-        I'm proficient in Rust, TypeScript, Scheme and C, and I'm familiar with
-        C++, Go and Python. I have some experience in formal verification with
-        the Coq proof assistant as well.
-        <br />
-        <br />
-        Currently exploring the functional programming paradigm with Haskell, and
-        low-level programming with WebAssembly!
-      </div>
-      <p class="content-header">- Projects -</p>
-      <div class="content-text">
-        I've worked on a variety of cool projects! Here are some of them:
-        <br />
-        <br />
-        <a href="https://github.com/s-kybound/scm-slang" class="content-text">
-          scm-slang: An R7RS Scheme implementation implemented as a
-          Scheme-to-JavaScript transpiler
-        </a>
-        <br />
-        <br />
-        <a href="https://github.com/s-kybound/go-slang" class="content-text">
-          go-slang: An implementation of Go in JavaScript using a virtual
-          machine
-        </a>
-        <br />
-        <br />
-        <a href="https://github.com/s-kybound/klang" class="content-text">
-          kylang: (WIP!) A self-specified programming language to demonstrate
-          programming language concepts, using a verified bytecode compiler
-        </a>
-      </div>
-    </section>
-  </body>
-</html>
+<Layout
+  title="~/ · Kyriel Abad"
+  description="Kyriel Abad — computer science undergraduate at NUS, passionate about programming languages, systems programming and memory management."
+>
+  <ProfilePicture />
+  <div class="hero">
+    <h1 class="cursor">My name is Kyriel.</h1>
+  </div>
+  <ForeverBanner />
+  <section class="content">
+    <h2>about me</h2>
+    <p>
+      Hi! I'm Kyriel, a penultimate computer science undergraduate at NUS. I
+      love learning new things and applying them to build cool stuff. I take
+      inspiration from the world; from the things and people I meet. I'm
+      interested in many things, but I'm particularly passionate about
+      programming languages, memory management, systems programming, and (in the
+      future) artificial general intelligence. I also have a passion for
+      teaching and sharing knowledge, and I'm always happy to help others learn.
+    </p>
+    <p>
+      Beyond academics, I enjoy making good meals, making digital art, playing
+      the trombone, and on occasion, exploring the world. I love tinkering — you
+      will often see me upgrading my split keyboard, or 3D printing something.
+    </p>
+    <p>
+      I'm always looking for new opportunities to learn and grow, so if you have
+      something interesting to share, or something to collaborate on, feel free
+      to reach out!
+    </p>
+
+    <h2>skills</h2>
+    <p>
+      I'm proficient in Rust, TypeScript, Scheme and C, and I'm familiar with
+      C++, Go and Python. I have some experience in formal verification with the
+      Coq proof assistant as well.
+    </p>
+    <p>
+      Currently exploring the functional programming paradigm with Haskell, and
+      low-level programming with WebAssembly!
+    </p>
+
+    <h2>projects</h2>
+    <p>I've worked on a variety of cool projects! Here are some of them:</p>
+    <ul>
+      <li>
+        <a href="https://github.com/s-kybound/scm-slang">scm-slang</a> — an R7RS Scheme
+        implementation built as a Scheme-to-JavaScript transpiler.
+      </li>
+      <li>
+        <a href="https://github.com/s-kybound/go-slang">go-slang</a> — an implementation
+        of Go in JavaScript using a virtual machine.
+      </li>
+      <li>
+        <a href="https://github.com/s-kybound/klang">kylang</a> — (WIP!) a self-specified
+        programming language to demonstrate programming language concepts, using a
+        verified bytecode compiler.
+      </li>
+    </ul>
+  </section>
+</Layout>
